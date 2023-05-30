@@ -1,1 +1,15 @@
+def get_ascii(character):
+    ascii_value = ord(character)
+    return ascii_value
 
+def get_binary(character):
+    binary_value = bin(ord(character))[2:]
+    return binary_value
+
+def get_results(word):
+    results = []
+    for character in word:
+        ascii_value = get_ascii(character)
+        binary_value = get_binary(character)
+        results.append((character, ascii_value, binary_value))
+    return results
