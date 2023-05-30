@@ -1,1 +1,40 @@
+from operations import get_ascii, get_binary, get_results
+import sys
 
+def menu():
+    while True:
+        print("Menu\n--===\n1. Generar la representacion ASCII de un caracter.\n2. Generar la representacion ASCII de una palabra.\n")
+        choice = input("Ingresa la opcion que quieres inicializar (1 or 2): ")
+
+        if choice == "1":
+            char = input("Ingresa un caracter: ")
+            ascii_value = get_ascii(char)
+            binary_value = get_binary(char)
+
+            print("Resultados\n=======")
+            print(f"Caracter: {char}")
+            print(f"Valor ASCII: {ascii_value}")
+            print(f"Representacion Binaria: {binary_value}\n")
+
+        elif choice == "2":
+            word = input("Ingresa una palabra: ")
+            results = get_results(word)
+
+            print("Resultados\n=======")
+            for character, ascii_value, binary_value in results:
+                print(f"Caracter: {character}")
+                print(f"Valor ASCII: {ascii_value}")
+                print(f"Representacion Binaria: {binary_value}\n")
+
+            print(f"Total: {len(results)} caracteres\n")
+
+        else:
+            print("Entrada Invalida. Por favor ingresa una opcion valida (1 o 2).\n")
+            continue
+
+        exit_choice = input("¿Quieres Salir? (si/no): ")
+        if exit_choice.lower() == "si":
+            sys.exit()
+
+if _name_ == "_main_":
+    menu()
