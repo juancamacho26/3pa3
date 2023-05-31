@@ -55,4 +55,10 @@ Esta función toma una palabra como entrada y devuelve una lista de tuplas que c
 
 No se proporciona un punto de entrada principal en este código. Las funciones `get_ascii()`, `get_binary()` y `get_results()` pueden ser utilizadas por otros módulos o scripts según sea necesario.
 
-Espero que esta documentación en formato Markdown sea útil para comprender el propósito de cada función en el código. Si tienes alguna pregunta adicional, ¡no dudes en preguntar!
+## Paso a paso para trabajar con el repositorio
+
+1. **Clonar el repositorio**: El primer paso es clonar el repositorio a tu máquina local utilizando el comando `git clone`. Este comando crea una copia local del repositorio en tu directorio de trabajo actual.
+   ```
+   git clone <URL_del_repositorio>
+    ```
+    
