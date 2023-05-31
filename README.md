@@ -61,4 +61,31 @@ No se proporciona un punto de entrada principal en este código. Las funciones `
    ```
    git clone <URL_del_repositorio>
     ```
-    
+2. **Cambiar al directorio del repositorio**: Navega al directorio del repositorio clonado utilizando el comando cd. Este comando te permite moverte al directorio específico donde se encuentra el repositorio clonado.
+```
+   cd <directorio_del_repositorio>
+ ```
+3. **Verificar el estado del repositorio**: Puedes utilizar el comando git status para ver el estado actual del repositorio local. Te muestra información sobre los archivos modificados, los archivos sin rastrear y los cambios pendientes de confirmar.
+```
+  git status
+ ```
+ 4. **Crear una rama de trabajo**: Es una buena práctica crear una rama de trabajo separada para realizar tus cambios sin afectar la rama principal (por lo general, llamada main o master). Utiliza el comando git branch para crear una nueva rama y git checkout para cambiar a esa rama.Crear una rama de trabajo: Es una buena práctica crear una rama de trabajo separada para realizar tus cambios sin afectar la rama principal (por lo general, llamada main o master). Utiliza el comando git branch para crear una nueva rama y git checkout para cambiar a esa rama
+```
+git branch <nombre_de_la_rama>
+git checkout <nombre_de_la_rama>
+ ```
+ 5. **Realizar modificaciones**: Realiza las modificaciones necesarias en los archivos del repositorio utilizando tu editor de código preferido.
+
+6. **Agregar los cambios**: Utiliza el comando git add para agregar los cambios realizados en los archivos al área de preparación, lo que indica que deseas incluir esos cambios en tu próxima confirmación.
+```
+git add <archivos_modificados>
+ ```
+ 7. **Realizar una confirmación**: Realiza una confirmación (commit) de los cambios utilizando el comando git commit. Asegúrate de incluir un mensaje descriptivo que explique los cambios realizados.
+```
+git commit -m "Mensaje descriptivo de los cambios"
+ ```
+ 8. 
+ **Subir los cambios al repositorio remoto**: Utiliza el comando git push para subir tus cambios a la rama correspondiente en el repositorio remoto.
+ ```
+git push origin <nombre_de_la_rama>
+ ```
