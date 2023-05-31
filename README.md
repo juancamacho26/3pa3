@@ -1,3 +1,9 @@
+# INTEGRANTES GRUPO #6
+- Alfonso Vega
+- Julian Martinez
+- Juan Camacho
+
+
 # Documentación del Código para menu
 
 ## Funciones
