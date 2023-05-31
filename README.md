@@ -27,3 +27,26 @@ Esta función se utiliza para finalizar la ejecución del programa de manera abr
 ```python
 if __name__ == "__main__":
     menu()
+```
+    
+# Documentación del Código para operaciones
+
+## Funciones
+
+### `get_ascii(character)`
+
+Esta función toma un carácter como entrada y devuelve su valor ASCII correspondiente. Utiliza la función `ord()` para obtener el valor ASCII del carácter.
+
+### `get_binary(character)`
+
+Esta función toma un carácter como entrada y devuelve su representación binaria. Utiliza la función `ord()` para obtener el valor ASCII del carácter y luego aplica la función `bin()` para obtener la representación binaria. La representación binaria se devuelve como una cadena, eliminando los dos primeros caracteres que corresponden al prefijo "0b".
+
+### `get_results(word)`
+
+Esta función toma una palabra como entrada y devuelve una lista de tuplas que contienen cada carácter de la palabra, su valor ASCII y su representación binaria. Utiliza un bucle `for` para iterar sobre cada carácter en la palabra y utiliza las funciones `get_ascii()` y `get_binary()` para obtener los resultados individuales de cada carácter. Los resultados se almacenan en una lista de tuplas.
+
+## Punto de Entrada Principal
+
+No se proporciona un punto de entrada principal en este código. Las funciones `get_ascii()`, `get_binary()` y `get_results()` pueden ser utilizadas por otros módulos o scripts según sea necesario.
+
+Espero que esta documentación en formato Markdown sea útil para comprender el propósito de cada función en el código. Si tienes alguna pregunta adicional, ¡no dudes en preguntar!
